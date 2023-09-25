@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bs648eqeiw6pu"]
+
+[ext_resource type="Script" path="res://Demo/DemoScene.gd" id="1_jt2pn"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/map2d_node.gd" id="2_wab4h"]
+[ext_resource type="Script" path="res://Demo/TestChildNode.gd" id="3_40744"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/room_factory.gd" id="3_ibnr1"]
+
+[sub_resource type="Resource" id="Resource_plxbh"]
+script = ExtResource("3_ibnr1")
+
+[node name="TestScene" type="Node2D"]
+script = ExtResource("1_jt2pn")
+
+[node name="MapNode" type="Node2D" parent="."]
+script = ExtResource("2_wab4h")
+map_id = "Test-Demo-Map-ID"
+map_area = 16
+number_of_steps = 80
+room_factory = SubResource("Resource_plxbh")
+
+[node name="TestChildNode" type="Node2D" parent="MapNode"]
+script = ExtResource("3_40744")
+
+[connection signal="map_generated" from="MapNode" to="." method="_on_map_2d_node_map_generated"]

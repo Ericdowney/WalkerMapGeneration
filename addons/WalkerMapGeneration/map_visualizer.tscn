@@ -1,0 +1,125 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxpcupxypmoat"]
+
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/map_visualizer.gd" id="1_x2dds"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/map_visualizer_list.gd" id="2_blpik"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hukcf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dxdnw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j2q4y"]
+
+[node name="MapVisualizer" type="Control"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x2dds")
+room_color = Color(0, 0.654902, 0.219608, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(2.08165e-12, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_hukcf")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WeightedDirectionsCheckBox" type="CheckBox" parent="VBoxContainer/Panel/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "When enabled, the random walker will not move backwards or in the same direction as their last move and only pick one of the two remaining cardinal directions. This should allow better map area utilization."
+text = "Weighted Directions"
+
+[node name="Spacer" type="Panel" parent="VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_dxdnw")
+
+[node name="RengerateMapButton" type="Button" parent="VBoxContainer/Panel/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(100, 2.08165e-12)
+layout_mode = 2
+text = "Regenerate Map"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="VBoxContainer/HSplitContainer"]
+custom_minimum_size = Vector2(200, 2.08165e-12)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HSplitContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MapList" type="ItemList" parent="VBoxContainer/HSplitContainer/Panel/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+allow_rmb_select = true
+script = ExtResource("2_blpik")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HSplitContainer/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="VBoxContainer/HSplitContainer/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_j2q4y")
+
+[node name="AddButton" type="Button" parent="VBoxContainer/HSplitContainer/Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+text = "+"
+
+[node name="RemoveButton" type="Button" parent="VBoxContainer/HSplitContainer/Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+text = "-"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HSplitContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/HSplitContainer/ScrollContainer"]
+clip_contents = true
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HSplitContainer/ScrollContainer/CenterContainer"]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 2
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
+columns = 2
+
+[connection signal="pressed" from="VBoxContainer/Panel/HBoxContainer/RengerateMapButton" to="." method="_on_rengerate_map_button_pressed"]
+[connection signal="item_selected" from="VBoxContainer/HSplitContainer/Panel/VBoxContainer/MapList" to="." method="_on_map_list_item_selected"]
+[connection signal="pressed" from="VBoxContainer/HSplitContainer/Panel/VBoxContainer/HBoxContainer/AddButton" to="." method="_on_new_map_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HSplitContainer/Panel/VBoxContainer/HBoxContainer/RemoveButton" to="." method="_on_remove_button_pressed"]

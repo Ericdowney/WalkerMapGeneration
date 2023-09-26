@@ -1,0 +1,270 @@
+[gd_resource type="Resource" script_class="Map" load_steps=59 format=3 uid="uid://bwawmpgjijcng"]
+
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/connection.gd" id="1_ncsmc"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/room_factory.gd" id="2_uscjm"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/room.gd" id="3_cvdcw"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/map.gd" id="4_xqoc4"]
+
+[sub_resource type="Resource" id="Resource_a8n5f"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_6"
+destination_id = "Room__7_6"
+
+[sub_resource type="Resource" id="Resource_f5mbg"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_6"
+destination_id = "Room__6_6"
+
+[sub_resource type="Resource" id="Resource_2bfka"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_6"
+destination_id = "Room__7_5"
+
+[sub_resource type="Resource" id="Resource_8eowx"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_5"
+destination_id = "Room__7_6"
+
+[sub_resource type="Resource" id="Resource_ljujj"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_5"
+destination_id = "Room__6_5"
+
+[sub_resource type="Resource" id="Resource_g2knh"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_5"
+destination_id = "Room__7_5"
+
+[sub_resource type="Resource" id="Resource_vxkja"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_5"
+destination_id = "Room__7_5"
+
+[sub_resource type="Resource" id="Resource_6xdrp"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_5"
+destination_id = "Room__6_5"
+
+[sub_resource type="Resource" id="Resource_qrntl"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_5"
+destination_id = "Room__7_4"
+
+[sub_resource type="Resource" id="Resource_ey7lg"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_4"
+destination_id = "Room__7_5"
+
+[sub_resource type="Resource" id="Resource_h610c"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_4"
+destination_id = "Room__6_4"
+
+[sub_resource type="Resource" id="Resource_mq85c"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_4"
+destination_id = "Room__7_4"
+
+[sub_resource type="Resource" id="Resource_qrrl5"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_4"
+destination_id = "Room__6_3"
+
+[sub_resource type="Resource" id="Resource_qeoan"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_3"
+destination_id = "Room__6_4"
+
+[sub_resource type="Resource" id="Resource_uog52"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_3"
+destination_id = "Room__5_3"
+
+[sub_resource type="Resource" id="Resource_ht0lo"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__5_3"
+destination_id = "Room__6_3"
+
+[sub_resource type="Resource" id="Resource_2qq2n"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__5_3"
+destination_id = "Room__6_3"
+
+[sub_resource type="Resource" id="Resource_afifs"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_3"
+destination_id = "Room__5_3"
+
+[sub_resource type="Resource" id="Resource_vulms"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_3"
+destination_id = "Room__6_4"
+
+[sub_resource type="Resource" id="Resource_f3arp"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_4"
+destination_id = "Room__6_3"
+
+[sub_resource type="Resource" id="Resource_xsmn1"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__6_4"
+destination_id = "Room__7_4"
+
+[sub_resource type="Resource" id="Resource_g3osf"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_4"
+destination_id = "Room__6_4"
+
+[sub_resource type="Resource" id="Resource_3dci4"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_4"
+destination_id = "Room__7_3"
+
+[sub_resource type="Resource" id="Resource_g3i06"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_3"
+destination_id = "Room__7_4"
+
+[sub_resource type="Resource" id="Resource_03o1u"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_3"
+destination_id = "Room__7_4"
+
+[sub_resource type="Resource" id="Resource_vaidb"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_4"
+destination_id = "Room__7_3"
+
+[sub_resource type="Resource" id="Resource_tl0k3"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_4"
+destination_id = "Room__7_3"
+
+[sub_resource type="Resource" id="Resource_h80gc"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_3"
+destination_id = "Room__7_4"
+
+[sub_resource type="Resource" id="Resource_kmffe"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__7_3"
+destination_id = "Room__8_3"
+
+[sub_resource type="Resource" id="Resource_t180f"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__8_3"
+destination_id = "Room__7_3"
+
+[sub_resource type="Resource" id="Resource_13wu2"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__8_3"
+destination_id = "Room__8_4"
+
+[sub_resource type="Resource" id="Resource_na26k"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__8_4"
+destination_id = "Room__8_3"
+
+[sub_resource type="Resource" id="Resource_p88ur"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__8_4"
+destination_id = "Room__8_3"
+
+[sub_resource type="Resource" id="Resource_7mova"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__8_3"
+destination_id = "Room__8_4"
+
+[sub_resource type="Resource" id="Resource_3tvmw"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__8_3"
+destination_id = "Room__9_3"
+
+[sub_resource type="Resource" id="Resource_m403k"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__9_3"
+destination_id = "Room__8_3"
+
+[sub_resource type="Resource" id="Resource_vkuer"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__9_3"
+destination_id = "Room__9_2"
+
+[sub_resource type="Resource" id="Resource_fv4ww"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__9_2"
+destination_id = "Room__9_3"
+
+[sub_resource type="Resource" id="Resource_pxuso"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__9_2"
+destination_id = "Room__9_3"
+
+[sub_resource type="Resource" id="Resource_m2hvl"]
+script = ExtResource("1_ncsmc")
+source_id = "Room__9_3"
+destination_id = "Room__9_2"
+
+[sub_resource type="Resource" id="Resource_vn20d"]
+script = ExtResource("2_uscjm")
+
+[sub_resource type="Resource" id="Resource_vi45e"]
+script = ExtResource("3_cvdcw")
+id = "Room__5_3"
+
+[sub_resource type="Resource" id="Resource_d8yxl"]
+script = ExtResource("3_cvdcw")
+id = "Room__6_3"
+
+[sub_resource type="Resource" id="Resource_iktp3"]
+script = ExtResource("3_cvdcw")
+id = "Room__6_4"
+
+[sub_resource type="Resource" id="Resource_3583p"]
+script = ExtResource("3_cvdcw")
+id = "Room__6_5"
+
+[sub_resource type="Resource" id="Resource_8kx0h"]
+script = ExtResource("3_cvdcw")
+id = "Room__6_6"
+
+[sub_resource type="Resource" id="Resource_ujbyb"]
+script = ExtResource("3_cvdcw")
+id = "Room__7_3"
+
+[sub_resource type="Resource" id="Resource_2sjgr"]
+script = ExtResource("3_cvdcw")
+id = "Room__7_4"
+
+[sub_resource type="Resource" id="Resource_rrixn"]
+script = ExtResource("3_cvdcw")
+id = "Room__7_5"
+
+[sub_resource type="Resource" id="Resource_vw6kp"]
+script = ExtResource("3_cvdcw")
+id = "Room__7_6"
+
+[sub_resource type="Resource" id="Resource_glnrw"]
+script = ExtResource("3_cvdcw")
+id = "Room__8_3"
+
+[sub_resource type="Resource" id="Resource_marlf"]
+script = ExtResource("3_cvdcw")
+id = "Room__8_4"
+
+[sub_resource type="Resource" id="Resource_pb2ie"]
+script = ExtResource("3_cvdcw")
+id = "Room__9_2"
+
+[sub_resource type="Resource" id="Resource_w1pnc"]
+script = ExtResource("3_cvdcw")
+id = "Room__9_3"
+
+[resource]
+script = ExtResource("4_xqoc4")
+id = "Map_2"
+rooms = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, SubResource("Resource_vi45e"), 0, 0, 0, 0, 0, 0], [0, 0, 0, SubResource("Resource_d8yxl"), SubResource("Resource_iktp3"), SubResource("Resource_3583p"), SubResource("Resource_8kx0h"), 0, 0, 0], [0, 0, 0, SubResource("Resource_ujbyb"), SubResource("Resource_2sjgr"), SubResource("Resource_rrixn"), SubResource("Resource_vw6kp"), 0, 0, 0], [0, 0, 0, SubResource("Resource_glnrw"), SubResource("Resource_marlf"), 0, 0, 0, 0, 0], [0, 0, SubResource("Resource_pb2ie"), SubResource("Resource_w1pnc"), 0, 0, 0, 0, 0, 0]]
+connections = Array[ExtResource("1_ncsmc")]([SubResource("Resource_a8n5f"), SubResource("Resource_f5mbg"), SubResource("Resource_2bfka"), SubResource("Resource_8eowx"), SubResource("Resource_ljujj"), SubResource("Resource_g2knh"), SubResource("Resource_vxkja"), SubResource("Resource_6xdrp"), SubResource("Resource_qrntl"), SubResource("Resource_ey7lg"), SubResource("Resource_h610c"), SubResource("Resource_mq85c"), SubResource("Resource_qrrl5"), SubResource("Resource_qeoan"), SubResource("Resource_uog52"), SubResource("Resource_ht0lo"), SubResource("Resource_2qq2n"), SubResource("Resource_afifs"), SubResource("Resource_vulms"), SubResource("Resource_f3arp"), SubResource("Resource_xsmn1"), SubResource("Resource_g3osf"), SubResource("Resource_3dci4"), SubResource("Resource_g3i06"), SubResource("Resource_03o1u"), SubResource("Resource_vaidb"), SubResource("Resource_tl0k3"), SubResource("Resource_h80gc"), SubResource("Resource_kmffe"), SubResource("Resource_t180f"), SubResource("Resource_13wu2"), SubResource("Resource_na26k"), SubResource("Resource_p88ur"), SubResource("Resource_7mova"), SubResource("Resource_3tvmw"), SubResource("Resource_m403k"), SubResource("Resource_vkuer"), SubResource("Resource_fv4ww"), SubResource("Resource_pxuso"), SubResource("Resource_m2hvl")])
+map_area = Vector2i(10, 10)
+number_of_steps = 20
+room_factory = SubResource("Resource_vn20d")

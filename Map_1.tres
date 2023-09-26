@@ -1,0 +1,274 @@
+[gd_resource type="Resource" script_class="Map" load_steps=60 format=3 uid="uid://b0gn7ocnbnan6"]
+
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/connection.gd" id="1_orxy2"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/room_factory.gd" id="2_s3hbn"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/room.gd" id="3_6cg4r"]
+[ext_resource type="Script" path="res://addons/WalkerMapGeneration/map.gd" id="4_ejvwo"]
+
+[sub_resource type="Resource" id="Resource_dqr47"]
+script = ExtResource("1_orxy2")
+source_id = "Room__5_7"
+destination_id = "Room__4_7"
+
+[sub_resource type="Resource" id="Resource_fodsx"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_7"
+destination_id = "Room__5_7"
+
+[sub_resource type="Resource" id="Resource_p4ak1"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_7"
+destination_id = "Room__4_6"
+
+[sub_resource type="Resource" id="Resource_015nh"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_6"
+destination_id = "Room__4_7"
+
+[sub_resource type="Resource" id="Resource_vgeiu"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_6"
+destination_id = "Room__3_6"
+
+[sub_resource type="Resource" id="Resource_u42aj"]
+script = ExtResource("1_orxy2")
+source_id = "Room__3_6"
+destination_id = "Room__4_6"
+
+[sub_resource type="Resource" id="Resource_pyxia"]
+script = ExtResource("1_orxy2")
+source_id = "Room__3_6"
+destination_id = "Room__3_7"
+
+[sub_resource type="Resource" id="Resource_c86lx"]
+script = ExtResource("1_orxy2")
+source_id = "Room__3_7"
+destination_id = "Room__3_6"
+
+[sub_resource type="Resource" id="Resource_yvuub"]
+script = ExtResource("1_orxy2")
+source_id = "Room__3_7"
+destination_id = "Room__4_7"
+
+[sub_resource type="Resource" id="Resource_stjyp"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_7"
+destination_id = "Room__3_7"
+
+[sub_resource type="Resource" id="Resource_anssr"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_7"
+destination_id = "Room__4_6"
+
+[sub_resource type="Resource" id="Resource_bbjo5"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_6"
+destination_id = "Room__4_7"
+
+[sub_resource type="Resource" id="Resource_4166m"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_6"
+destination_id = "Room__5_6"
+
+[sub_resource type="Resource" id="Resource_vkutt"]
+script = ExtResource("1_orxy2")
+source_id = "Room__5_6"
+destination_id = "Room__4_6"
+
+[sub_resource type="Resource" id="Resource_l076g"]
+script = ExtResource("1_orxy2")
+source_id = "Room__5_6"
+destination_id = "Room__5_7"
+
+[sub_resource type="Resource" id="Resource_q0qe1"]
+script = ExtResource("1_orxy2")
+source_id = "Room__5_7"
+destination_id = "Room__5_6"
+
+[sub_resource type="Resource" id="Resource_emypu"]
+script = ExtResource("1_orxy2")
+source_id = "Room__5_7"
+destination_id = "Room__6_7"
+
+[sub_resource type="Resource" id="Resource_mg4r5"]
+script = ExtResource("1_orxy2")
+source_id = "Room__6_7"
+destination_id = "Room__5_7"
+
+[sub_resource type="Resource" id="Resource_5kur6"]
+script = ExtResource("1_orxy2")
+source_id = "Room__6_7"
+destination_id = "Room__7_7"
+
+[sub_resource type="Resource" id="Resource_4ebtp"]
+script = ExtResource("1_orxy2")
+source_id = "Room__7_7"
+destination_id = "Room__6_7"
+
+[sub_resource type="Resource" id="Resource_xyeqj"]
+script = ExtResource("1_orxy2")
+source_id = "Room__7_7"
+destination_id = "Room__8_7"
+
+[sub_resource type="Resource" id="Resource_8rebv"]
+script = ExtResource("1_orxy2")
+source_id = "Room__8_7"
+destination_id = "Room__7_7"
+
+[sub_resource type="Resource" id="Resource_ulvh6"]
+script = ExtResource("1_orxy2")
+source_id = "Room__8_7"
+destination_id = "Room__7_7"
+
+[sub_resource type="Resource" id="Resource_ayb6h"]
+script = ExtResource("1_orxy2")
+source_id = "Room__7_7"
+destination_id = "Room__8_7"
+
+[sub_resource type="Resource" id="Resource_b0241"]
+script = ExtResource("1_orxy2")
+source_id = "Room__7_7"
+destination_id = "Room__8_7"
+
+[sub_resource type="Resource" id="Resource_0yq62"]
+script = ExtResource("1_orxy2")
+source_id = "Room__8_7"
+destination_id = "Room__7_7"
+
+[sub_resource type="Resource" id="Resource_7jymv"]
+script = ExtResource("1_orxy2")
+source_id = "Room__8_7"
+destination_id = "Room__7_7"
+
+[sub_resource type="Resource" id="Resource_hcmi3"]
+script = ExtResource("1_orxy2")
+source_id = "Room__7_7"
+destination_id = "Room__8_7"
+
+[sub_resource type="Resource" id="Resource_ggenc"]
+script = ExtResource("1_orxy2")
+source_id = "Room__7_7"
+destination_id = "Room__6_7"
+
+[sub_resource type="Resource" id="Resource_u35xr"]
+script = ExtResource("1_orxy2")
+source_id = "Room__6_7"
+destination_id = "Room__7_7"
+
+[sub_resource type="Resource" id="Resource_j26kl"]
+script = ExtResource("1_orxy2")
+source_id = "Room__6_7"
+destination_id = "Room__6_8"
+
+[sub_resource type="Resource" id="Resource_fvlhn"]
+script = ExtResource("1_orxy2")
+source_id = "Room__6_8"
+destination_id = "Room__6_7"
+
+[sub_resource type="Resource" id="Resource_ttf06"]
+script = ExtResource("1_orxy2")
+source_id = "Room__6_8"
+destination_id = "Room__5_8"
+
+[sub_resource type="Resource" id="Resource_jpb4t"]
+script = ExtResource("1_orxy2")
+source_id = "Room__5_8"
+destination_id = "Room__6_8"
+
+[sub_resource type="Resource" id="Resource_ghyqq"]
+script = ExtResource("1_orxy2")
+source_id = "Room__5_8"
+destination_id = "Room__4_8"
+
+[sub_resource type="Resource" id="Resource_cigl3"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_8"
+destination_id = "Room__5_8"
+
+[sub_resource type="Resource" id="Resource_i6xav"]
+script = ExtResource("1_orxy2")
+source_id = "Room__4_8"
+destination_id = "Room__3_8"
+
+[sub_resource type="Resource" id="Resource_rjw1n"]
+script = ExtResource("1_orxy2")
+source_id = "Room__3_8"
+destination_id = "Room__4_8"
+
+[sub_resource type="Resource" id="Resource_k6jbj"]
+script = ExtResource("1_orxy2")
+source_id = "Room__3_8"
+destination_id = "Room__3_9"
+
+[sub_resource type="Resource" id="Resource_bwvg6"]
+script = ExtResource("1_orxy2")
+source_id = "Room__3_9"
+destination_id = "Room__3_8"
+
+[sub_resource type="Resource" id="Resource_t3rx5"]
+script = ExtResource("2_s3hbn")
+
+[sub_resource type="Resource" id="Resource_042o4"]
+script = ExtResource("3_6cg4r")
+id = "Room__3_6"
+
+[sub_resource type="Resource" id="Resource_h47av"]
+script = ExtResource("3_6cg4r")
+id = "Room__3_7"
+
+[sub_resource type="Resource" id="Resource_ttbnx"]
+script = ExtResource("3_6cg4r")
+id = "Room__3_8"
+
+[sub_resource type="Resource" id="Resource_efp06"]
+script = ExtResource("3_6cg4r")
+id = "Room__3_9"
+
+[sub_resource type="Resource" id="Resource_jxu8y"]
+script = ExtResource("3_6cg4r")
+id = "Room__4_6"
+
+[sub_resource type="Resource" id="Resource_astl8"]
+script = ExtResource("3_6cg4r")
+id = "Room__4_7"
+
+[sub_resource type="Resource" id="Resource_twyc8"]
+script = ExtResource("3_6cg4r")
+id = "Room__4_8"
+
+[sub_resource type="Resource" id="Resource_08ofe"]
+script = ExtResource("3_6cg4r")
+id = "Room__5_6"
+
+[sub_resource type="Resource" id="Resource_gnyyu"]
+script = ExtResource("3_6cg4r")
+id = "Room__5_7"
+
+[sub_resource type="Resource" id="Resource_ddknk"]
+script = ExtResource("3_6cg4r")
+id = "Room__5_8"
+
+[sub_resource type="Resource" id="Resource_64l3i"]
+script = ExtResource("3_6cg4r")
+id = "Room__6_7"
+
+[sub_resource type="Resource" id="Resource_btfar"]
+script = ExtResource("3_6cg4r")
+id = "Room__6_8"
+
+[sub_resource type="Resource" id="Resource_g3nyl"]
+script = ExtResource("3_6cg4r")
+id = "Room__7_7"
+
+[sub_resource type="Resource" id="Resource_dnnil"]
+script = ExtResource("3_6cg4r")
+id = "Room__8_7"
+
+[resource]
+script = ExtResource("4_ejvwo")
+id = "Map_1"
+rooms = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, SubResource("Resource_042o4"), SubResource("Resource_h47av"), SubResource("Resource_ttbnx"), SubResource("Resource_efp06")], [0, 0, 0, 0, 0, 0, SubResource("Resource_jxu8y"), SubResource("Resource_astl8"), SubResource("Resource_twyc8"), 0], [0, 0, 0, 0, 0, 0, SubResource("Resource_08ofe"), SubResource("Resource_gnyyu"), SubResource("Resource_ddknk"), 0], [0, 0, 0, 0, 0, 0, 0, SubResource("Resource_64l3i"), SubResource("Resource_btfar"), 0], [0, 0, 0, 0, 0, 0, 0, SubResource("Resource_g3nyl"), 0, 0], [0, 0, 0, 0, 0, 0, 0, SubResource("Resource_dnnil"), 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+connections = Array[ExtResource("1_orxy2")]([SubResource("Resource_dqr47"), SubResource("Resource_fodsx"), SubResource("Resource_p4ak1"), SubResource("Resource_015nh"), SubResource("Resource_vgeiu"), SubResource("Resource_u42aj"), SubResource("Resource_pyxia"), SubResource("Resource_c86lx"), SubResource("Resource_yvuub"), SubResource("Resource_stjyp"), SubResource("Resource_anssr"), SubResource("Resource_bbjo5"), SubResource("Resource_4166m"), SubResource("Resource_vkutt"), SubResource("Resource_l076g"), SubResource("Resource_q0qe1"), SubResource("Resource_emypu"), SubResource("Resource_mg4r5"), SubResource("Resource_5kur6"), SubResource("Resource_4ebtp"), SubResource("Resource_xyeqj"), SubResource("Resource_8rebv"), SubResource("Resource_ulvh6"), SubResource("Resource_ayb6h"), SubResource("Resource_b0241"), SubResource("Resource_0yq62"), SubResource("Resource_7jymv"), SubResource("Resource_hcmi3"), SubResource("Resource_ggenc"), SubResource("Resource_u35xr"), SubResource("Resource_j26kl"), SubResource("Resource_fvlhn"), SubResource("Resource_ttf06"), SubResource("Resource_jpb4t"), SubResource("Resource_ghyqq"), SubResource("Resource_cigl3"), SubResource("Resource_i6xav"), SubResource("Resource_rjw1n"), SubResource("Resource_k6jbj"), SubResource("Resource_bwvg6")])
+map_area = Vector2i(10, 10)
+number_of_steps = 20
+room_factory = SubResource("Resource_t3rx5")
